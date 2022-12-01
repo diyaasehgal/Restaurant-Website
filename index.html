@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Curated Cuisine</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+
+</head>
+
+<body>
+
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#"><img class="logo" src="./img/logo5.png" alt="Restaurant Logo"/></a>
+			<nav class="nav-bar">
+			  
+				<ul class="nav-links" id="nav-links">
+				   <i class="fa fa-close"onclick="closeMenu()"></i>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./menu.html">Menu</a></li>
+					<li><a href="./karaoke.html">Club/Bar</a></li>
+					<li><a href="./promotions.html">Promotions/Events</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				
+				</ul>
+         				
+				<i class="fa fa-bars"onclick="showMenu()"></i>
+			</nav>
+		</header>
+
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Welcome to Curated Cuisine</h1>
+			<p>A Crazy place for crazy foody - Heart of Perfect Food Hangout!</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section>
+
+  
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+			  <div class="para">
+				<img class="icon" src="img/7.jpg" alt=""/>
+				<span class="separator"></span>
+				<h2>Known for service</h2>
+				<p>We are committed to provide you with an exceptional dining experience every time you walk through our door.</p>
+			  </div>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<img class="icon" src="img/chinese.jpg" alt=""/>
+				<span class="separator"></span>
+				<h2>Modern Asian Dining</h2>
+				<p>We offer authentic Chinese and Asian cuisine from the different parts of China and the Far East.
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".4s">
+				<img class="icon" src="img/foodie.jpg" alt=""/>
+				<span class="separator"></span>
+				<h2>A harmonious taste</h2>
+				<p>Our chefs understand that the secret of good taste lies largely in the freshness of the ingredients and creating a harmionious combination of tastes.</p>
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="video">
+		<img class="logo" src="img/logo5.png"  class="video_logo animated wow fadeInDown"/>
+		<h3 class="animated wow fadeInDown">The icing on the cake is our prompt, efficient and personalized service.</h3>
+		<a href="#" id="play_btn" class="fancybox animated wow flipInX" data-wow-duration="2s"></a>
+	</section>
+
+
+	<section class="testimonials wrapper">
+	 <div id="hall">
+		<div class="title animated wow fadeIn">
+			<h2 id="heading">We have Halls too!</h2>
+			<h3 id="text">Apart from the mouth watering food we offer private dining rooms/halls with DJ facility in every room  (Rooms/Halls can adequately accommodate 10 to 45 people)</h3>
+			<hr class="separator"/>
+		</div>
+     </div>		
+	</section>
+	<section>
+	<br>
+	<br>
+	    <div id="reservation">
+		<img id="call" src="img\unnamed.png"/>
+          <h2>Reservation</h2>
+          <p>090-080-18333 | 183-222-3342</p>
+          <p>infor@company.com</p>
+          <p>LINE: readyfood383</p>
+		  <br>
+		  <button id="button" onclick="myFunction()">Reserve a Table</button>
+        </div>
+		<div id="image">
+		<img  src="img\addtext_com_MDQzMTI2MjIxMzc.jpg" />
+		</div>
+    </section>    
+	<footer>
+		<div class="wrapper">
+			<div class="rights">
+				<p>All Rights Reserved 2021 - Curated Cuisine</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="./menu.html">Menu</a></li>
+					<li><a href="./karaoke.html">Club/Bar</a></li>
+					<li><a href="./promotions.html">Promotions/Events</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</footer>
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fancybox.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script>
+	var show=document.getElementById("nav-links");
+	function showMenu(){
+	   show.style.right="0";
+	}
+	function closeMenu(){
+	   show.style.right="-200px";
+	}
+
+	 function myFunction() {
+  alert("For how many people you want to reserve a table ?");
+}
+
+	</script>
+</body>
+</html>

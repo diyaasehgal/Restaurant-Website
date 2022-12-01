@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Curated Cuisine</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox-thumbs.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox-buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#"><img class="logo" src="img\contact us.png"/></a>
+			<nav class="nav-bar">
+			  
+				<ul class="nav-links" id="nav-links">
+				   <i class="fa fa-close"onclick="closeMenu()"></i>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./menu.html">Menu</a></li>
+					<li><a href="./karaoke.html">Club/Bar</a></li>
+					<li><a href="./promotions.html">Promotions/Events</a></li>
+					<li><a href="#">Contact Us</a></li>
+				
+				</ul>
+         				
+				<i class="fa fa-bars"onclick="showMenu()"></i>
+			</nav>
+		</header>
+
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Come talk to us</h1>
+			<p>We always value your words.</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section><!--  End billboard  -->
+
+
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+				<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34493.31833912945!2d77.19960065924029!3d28.62496112037308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd35c804a1a1%3A0xe374c47e935b9c3a!2sCafe%20Delhi%20Heights!5e0!3m2!1sen!2sus!4v1620057472435!5m2!1sen!2sus"></iframe>
+				<!-- <span class="separator"></span> -->
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<img class="icon" src="img/arrow2.png" alt=""/>
+				<span class="separator"></span>
+				<h2>How to reach us:</h2>
+				<p>Phone No. 00100 17xxxxxx</p>
+				<p>Fax:      00100 17xxxxxx</p>
+				<p>House No. xxx. Road. xxxx. Block. xxx. BleckerStreet.</p>
+				<!-- Google maps embed here -->
+			</li>
+		</ul>
+	</section><!--  End services  -->
+
+
+	<section class="video">
+		<img class="logo" src="img\text.png" class="video_logo animated wow fadeInDown"/>
+		<img src="img/video_logo.png" alt="" class="video_logo animated wow fadeInDown"/>
+		<h3 class="animated wow fadeInDown">Please send us your opinions in the form below, thank you!</h3>
+
+	</section><!--  End video  -->
+	
+	<!-- contact form -->
+	<section class="contact">
+		<div id="form-main">
+		  <div id="form-div">
+		    <form class="form" id="form1">
+		      
+		      <p class="name">
+		        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required />
+		      </p>
+		      
+		      <p class="email">
+		        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required/>
+		      </p>
+		      
+		      <p class="text">
+		        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"required></textarea>
+		      </p>
+		      
+		      
+		      <div class="submit">
+		        <input type="submit" value="SEND" id="button-blue"/>
+		        <div class="ease"></div>
+		      </div>
+		    </form>
+		  </div>
+	</section>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="rights">
+				<p>All Rights Reserved 2021 - Curated Cuisine</p>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="./menu.html">Menu</a></li>
+					<li><a href="./karaoke.html">Club/Bar</a></li>
+					<li><a href="./promotions.html">Promotions/Events</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</footer><!--  End footer  -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fancybox.js"></script>
+    <script type="text/javascript" src="js/fancybox-buttons.js"></script>
+    <script type="text/javascript" src="js/fancybox-media.js"></script>
+    <script type="text/javascript" src="js/fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script>
+	var show=document.getElementById("nav-links");
+	function showMenu(){
+	   show.style.right="0";
+	}
+	function closeMenu(){
+	   show.style.right="-200px";
+	}
+	</script>
+</body>
+</html>
+
+	
+
+
+	
+
+

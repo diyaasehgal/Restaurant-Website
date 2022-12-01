@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Curated Cuisine</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="style.js"></script>
+</head>
+
+<style>
+.nav{
+  margin-top:3.5rem; 
+  margin-left:32rem;
+  font-size:20px;
+  color:#807c74;
+}
+.footer {
+   font-size: 18px;
+   position:absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align:center;
+   margin-bottom:-80rem;
+   padding:20px;
+   
+}
+
+.footer1{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: left;
+   
+}
+.logo{
+   position:absolute;
+   height:150px;
+   width:150px;
+   margin-left:24px;
+   margin-top:-15px;
+}
+#bg{
+    background-image: url('blur.jpg');
+	background-repeat:no-repeat;
+	background-size:100%;
+	margin-top:10rem;
+
+}
+.circle{
+  position:relative;
+  height:100px;
+  width:100px;
+  top:14px;
+  left:3rem;
+}
+
+#button{
+    font-size:15px;
+	padding:15px;
+	width:50%;
+	float:left;
+	border: 2px solid #ff0571;
+	margin-left:-2px;
+}
+#button1{
+    font-size:15px;
+	padding:15px;
+	width:50%;
+	border: 2px solid #ff0571;
+	margin-left:2px;
+}
+#form1{
+    padding:3rem;
+    margin-left:298px;
+	margin-top:-37.3rem;
+}
+#form2{
+    padding:3rem;
+    margin-left:650px;
+	margin-top:-37.3rem;
+}
+#form3{
+   padding:3rem;
+   margin-top:6rem;
+   margin-left:-55px;
+}
+#cash{
+   font-size:15px;
+	padding:15px;
+	width:50%;
+	float:left;
+	border: 2px solid #ff0571;
+	margin-left:-2px;
+}
+.btn1{
+    font-size:15px;
+	border: 2px solid #ff0571;
+	margin-right:-1.7rem;
+	
+}
+
+
+</style>
+<body>
+ <header>
+  <a href="#"><img class="logo" src="./img/menulogo.png"/></a>
+  <nav class="nav-bar">
+     <div class="nav">
+	  <ul class="nav-links" id="nav-links">
+				   <i class="fa fa-close"onclick="closeMenu()"></i>
+      <a style="color:White;text-decoration: none" href="./index.html">Home</a> &nbsp &nbsp &nbsp &nbsp
+      <a style="color:White;text-decoration: none" href="#">Menu</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      <a style="color:White;text-decoration: none" href="./karaoke.html">Club/Bar</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+      <a style="color:White;text-decoration: none" href="./promotions.html">Promotions/Events</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+      <a style="color:White;text-decoration: none" href="./contact.html">Contact Us</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+      </ul>
+         				
+				<i class="fa fa-bars"onclick="showMenu()"></i>
+  </nav>
+     </div>
+		</header>
+	 
+
+
+<div class="div_1">
+	<center>
+		<h1 class="wrapper">Welcome To Curated Cuisine</h1>
+		
+		<button class="btn_1">View Menu</button>
+	</center>
+</div>
+<div class="Section">
+<h1 class="food">Food Menu</h1>
+
+<div class="Box">
+	<div class="text">
+		<h5 class="title">Sweet Potato Crostini with Prosciutto Honey Roasted Figs</h5>
+		<p>
+			<span class="main">Sweet Potato -small</span><br/>
+			<span class="content_1"> Honey Roasted Figs-small</span><br/>
+			<span class="content_2">1 Pepsi</span><br/>
+			<span class="content_3">1 salad</span><br/>
+			<p class="price">Rs.310</p>
+
+		</p>
+	</div>
+	<div class="image"></div>
+</div>
+<center>
+<button class="btn" onclick="myfunction()">Next</button>
+
+</center>
+
+<br>
+<br>
+<br>
+  <section id="bg">
+       <a href="#"><img class="circle" src="./img/circle.png"/></a>
+        
+             
+                   <div id="form3">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Login using username/phone no.</h1></center>
+				                <input type="text"placeholder="user name/phone no." required/>
+				                <input type="password"placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+				                <button onclick="myFunction()">LOGIN</button>
+				                <p class="message">Not Registered? Register</p>
+				            </form>
+                 
+			             </div>
+	                </div>
+			      </div>		
+		      <div id="form1">			
+                <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Delivery/Pickup</h1></center>
+								<h1 style="color:white;">Address</h1>
+				                <input type="text"placeholder="street,landmark,city" required/>
+								<h1 style="color:white;">contact no.</h1>
+				                <input type="text"placeholder="708xxxxxxx" required/>
+				                <button id="button" onclick="myFunction2()">Delivery</button> <button id="button1" onclick="myFunction3()">Pickup</button>
+				                
+				            </form>
+                            
+			             </div>
+	          			  </div>
+			  </div>
+              <div id="form2">			  
+				<div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Place your order & Pay</h1></center>
+								 <h1 style="color:white;">What would you like to have?</h1>
+				                <input  type="text"placeholder="Dishes ex. fries,pizza" required/>
+				    
+				              <button onclick="myFunction4()"> Add To Cart </button>	<br><br>
+								<button onclick="myFunction5()" id="cash">Cash on Delivery</button>
+								<button style="height:68px;width:130px"class="btn1" onclick="location.href = 'payment.html';">Pay Online</button>
+								
+				        </div>
+				</div>		
+								
+              </div>              
+    
+  </section>
+</div>  
+<div class="footer">
+<a style=" color:#838181; text-decoration: none;" > All Rights Reserved 2021 - Curated Cuisine</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a style=" color:#838181; text-decoration: none;" href="./index.html " >Home</a> &nbsp &nbsp &nbsp 
+<a style=" color:#838181; text-decoration: none;" href="#">Menu</a> &nbsp &nbsp &nbsp 
+<a style=" color:#838181; text-decoration: none;" href="./karaoke.html">Club/Bar</a> &nbsp &nbsp &nbsp 
+<a style=" color:#838181; text-decoration: none;" href="./promotions.html">Promotions/Events</a> &nbsp &nbsp &nbsp 
+<a style=" color:#838181; text-decoration: none;" href="./contact.html">Contact Us</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+</div>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+	<script>
+	var show=document.getElementById("nav-links");
+	function showMenu(){
+	   show.style.right="0";
+	}
+	function closeMenu(){
+	   show.style.right="-200px";
+	}
+	</script>
+<script>
+function myFunction2() {
+  alert("Your order wil be Delivered in 45 minutes ⏳");
+}
+</script>
+<script>
+function myFunction4() {
+  alert("Your items have been added to cart 🛒 Please proceed for Payment 🧾");
+}
+</script>
+<script>
+function myFunction5() {
+  alert("OK! 🤝 you can pay cash on delivery");
+}
+</script>
+</body>
+</html>
